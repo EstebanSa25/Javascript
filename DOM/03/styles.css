@@ -1,0 +1,22 @@
+#publicidad{
+    background: yellow;
+    height: 100px;
+    text-align: center;
+    margin: 1em 0;
+}
+div{
+    border: 1px solid red;
+    padding: 1em;
+    text-align: center;
+    margin: .5em;
+}
+
+body{
+    font-size: 2em;
+}
+h1{
+    font-size: 2em;
+}
+p{
+    font-size: .5em;
+}

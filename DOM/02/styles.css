@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    padding-bottom: 100em;
+    align-content: center;
+
+    flex-direction: column;
+}
+.ball{
+    --size:100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: red;
+    margin: auto;
+}
+/*input{*/
+/*    font-size: 2em;*/
+/*    padding: .25em;*/
+/*}*/
+/*form{*/
+/*    padding: 1em;*/
+/*}*/
+/*input{*/
+/*    display: block;*/
+/*    margin-bottom: 1em;*/
+/*}*/
+/*.video{*/
+
+/*    width: 640px;*/
+/*    height: 360px;*/
+/*    display: block;*/
+/*}*/
+/*button{*/
+/*width: 50px;*/
+/*    height: 50px;*/
+/*}*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   gap: 10em;
+}
+
+.img img{
+    width: 700px;
+    height: 700px;
+}

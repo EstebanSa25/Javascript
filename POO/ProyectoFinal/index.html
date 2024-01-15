@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDcursos</title>
+    <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710">
+
+</head>
+<body>
+<div class="ed-grid">
+    <h1>EDCursos</h1>
+   <form id="formCursos">
+       <div class="ed-grid m-grid-4">
+           <div class="form-item">
+           <label>
+               Nombre
+               <input type="text" name="nombreCurso" required>
+           </label>
+           </div><div class="form-item">
+           <label>
+               Poster
+               <input type="text" name="posterCurso" required>
+           </label>
+           </div>
+           <div class="form-item">
+           <label>
+               Clases
+               <input type="number" min="1" name="clasesCurso" required>
+           </label>
+           </div>
+           <div class="form-item m-py-3">
+               <input class="button" type="submit"  value="crear Curso" required>
+
+           </div>
+       </div>
+   </form>
+    <h1>Usuario registro</h1>
+    <form id="formUsuarios">
+        <div class="ed-grid m-grid-4">
+            <div class="form-item">
+                <label>
+                    Nombre
+                    <input type="text" name="nombreUsuario" required>
+                </label>
+            </div><div class="form-item">
+            <label>
+                Apellidos
+                <input type="text" name="apellidoUsuario" required>
+            </label>
+        </div>
+            <div class="form-item">
+                <label>
+                    correo
+                    <input type="email"  name="correoUsuario" required>
+                </label>
+            </div>
+            <div class="form-item">
+                <label>
+                    Estado
+                   <select name="activoUsuario">
+                       <option value="true">Activo</option>
+                       <option value="false">Desactivado</option>
+                   </select>
+                </label>
+            </div>
+            <div class="form-item">
+                <label>
+                    Rol
+                   <select id="rolUsuario" name="rolUsuario">
+                       <option value="Profesor">Profesor</option>
+                       <option value="Alumno">Alumno</option>
+                   </select>
+                </label>
+            </div>
+            <div class="form-item m-py-3">
+                <input class="button" type="submit" id="buttonUsuario" value="crear usuario" required>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="ed-grid m-grid-4 s-grid-2" id="cursos">
+
+</div>
+
+<script type="module" src="scripts/index.js"></script>
+</body>
+</html>
+
